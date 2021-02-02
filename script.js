@@ -55,7 +55,9 @@ const startGame = () => {
     setTimeout(() => {
         document.querySelector('.overlay').classList.add('hidden')
         document.querySelector('main').classList.remove('hidden')
-    }, 500)
+        document.querySelector('.content h2').classList.add('hidden')
+
+    }, 1000)
 }
 
 //*ROLLING DICE FUNCTIONALITY

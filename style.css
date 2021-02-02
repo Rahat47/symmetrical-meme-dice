@@ -176,23 +176,33 @@ main {
   height: 100%;
   background: #2f2f2f;
 }
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h2 {
+  z-index: 10;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
 .half {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: #19eb70;
+  background-image: linear-gradient(to top left, #22d87d 0%, #1cbcec 100%);
   z-index: 6;
   border-top: none;
   border-bottom: none;
-  transition: 500ms;
+  transition: 1000ms;
 }
 .start-game {
-  position: absolute;
   cursor: pointer;
   z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 2px solid #753682;
   padding: 20px 40px;
   font-family: 'Nunito', sans-serif;
@@ -200,20 +210,16 @@ main {
   font-weight: bold;
   font-size: 20px;
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
-  transition: all 500ms;
+  transition: all 1000ms;
 }
 .start-game:hover {
   background-image: linear-gradient(to top left, #753682 50%, #bf2e34 100%);
 }
-// .overlay:hover .left {
-//   left: -50%;
-// }
-// .overlay:hover .right {
-//   left: 100%;
-// }
+
 .left {
   left: 0;
 }
 .right {
   left: 50%;
+  background-image: linear-gradient(to top right, #22d87d 0%, #1cbcec 100%);
 }
